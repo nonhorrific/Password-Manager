@@ -53,20 +53,20 @@ string PasswordGen() {
 	string RandPassword;
 
 		//Used characters
-		string Decyph[85] = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j","k", "l", "m", "n", "o", "p", "q", "r", "s","t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J","K", "L", "M", "N", "O", "P", "Q", "R","S", "T", "U", "V", "W", "X", "Y", "Z","!","@","#","$","%","^","&","*","(",")","?","1","2","3","4","5","6","7","8","9","0" };
+		string Decyph[73] = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j","k", "l", "m", "n", "o", "p", "q", "r", "s","t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J","K", "L", "M", "N", "O", "P", "Q", "R","S", "T", "U", "V", "W", "X", "Y", "Z","!","@","#","$","%","^","&","*","(",")","?","1","2","3","4","5","6","7","8","9","0" };
 
 		//Random seed(seed is time on computer)
 		srand(static_cast<unsigned int>(time(0)));
 
 
 		//Undecypherable Randomness
-		for (int i = rand() % 85; i < 85; i++) {
-			Decyph[rand() % 85] = Decyph[i];
+		for (int i = rand() % 73; i < 73; i++) {
+			Decyph[rand() % 73] = Decyph[i];
 		}
 
 		//Meant to display 20 character but comes out 2 characters short
 		for (int i = 0; i < 20; i++) {
-			RandPassword.append(Decyph[rand() % 85]);
+			RandPassword.append(Decyph[rand() % 73]);
 		}
 		return RandPassword;
 }
