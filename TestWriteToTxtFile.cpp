@@ -64,7 +64,7 @@ string PasswordGen() {
 			Decyph[rand() % 73] = Decyph[i];
 		}
 
-		//Meant to display 20 character but comes out 2 characters short
+		//Create 20 Character Password
 		for (int i = 0; i < 20; i++) {
 			RandPassword.append(Decyph[rand() % 73]);
 		}
