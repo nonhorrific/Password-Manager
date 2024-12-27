@@ -26,6 +26,7 @@ int main()
 			cin >> x;
 			if (x == '1') {
 				Pw = PasswordGen();
+				cout<< Pw << endl;
 			}
 			else {
 				cout << "Enter Password: ";
