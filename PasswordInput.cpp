@@ -23,7 +23,7 @@ int main()
 			cin >> x;
 			if (x == '1') {                                         
 				Pw = PasswordGen();
-				if (setClipboardText(Pw)) {	#save to clipboard
+				if (setClipboardText(Pw)) {	//save to clipboard
 					cout << "Password Copied To Clipboard!\n";
 			}
 				else {
