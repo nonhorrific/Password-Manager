@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-	string SiteName{}, User{}, Pw{};
+	string SiteName{}, User{}, Pw{}; 
 	char Exkey{ 'y' };
 
 	ofstream file1;
@@ -21,9 +21,9 @@ int main()
 			cout << "[1] For Randomly Generated Password | [0] Use Preexisting Password";
 			char x;
 			cin >> x;
-			if (x == '1') {
+			if (x == '1') {                                         
 				Pw = PasswordGen();
-				if (setClipboardText(Pw)) {
+				if (setClipboardText(Pw)) {	#save to clipboard
 					cout << "Password Copied To Clipboard!\n";
 			}
 				else {
